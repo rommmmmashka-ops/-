@@ -3,7 +3,7 @@ list1 = [4,16,5,12,17,1,10,14,2,5, "larl","collapse","yatoro","mira","skiter","p
 intList = []
 for x in list1:
     if type(x) == str:
-        break
+        continue
     intList.append(x)
 intList.sort()
 

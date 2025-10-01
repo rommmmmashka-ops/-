@@ -39,8 +39,7 @@ def main():
     print(convert(25.45))
     print(convert(20))
     
-    print(is_available("яблуко","хліб","шоколад","молоко"))
-    print(is_available())
+    print(is_available("яблуко","хліб","шоколад","молоко"))
     
     print(order_info(["яблуко","молоко","морозиво","хліб"], "ціна"))
     print(order_info(["яблуко","молоко","морозво"], "Купити"))

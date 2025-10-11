@@ -11,7 +11,7 @@ store = {
 def convert(price: float):
     return f"ціна: {price:.2f} грн"
 
-def is_available(*products):
+def is_available(*products: str):
     products_dict = {}
     for i in products:
         products_dict[i] = i in store

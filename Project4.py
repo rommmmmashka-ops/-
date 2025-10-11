@@ -31,7 +31,10 @@ def order_info(order: list[str], option: str):
         if option.lower() == "купити":
             return "Ви купили: " + ", ".join(order) + ". " + convert(price)
         elif option.lower() == "переглянути ціну" or option.lower() == "ціна":
-            return convert(price)
+            prices = []
+            for i in order:
+                prices.append(f"{i} {convert(store[i])}")
+            return ", ".join(prices)
         else:
             return "Невідома опція"
 
